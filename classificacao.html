@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabela de Classificação</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Tabela de Classificação</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Pontuação</th>
+        </tr>
+        {% for user in classificacao %}
+            <tr>
+                <td>{{ user['nome'] }}</td>
+                <td>{{ user.get('pontuacao', '-') }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

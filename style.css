@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #0677f0;
+    padding: 20px;
+    color: #000000;
+}
+
+main {
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resultado {
+    font-size: 18px;
+}
+ 
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+}
